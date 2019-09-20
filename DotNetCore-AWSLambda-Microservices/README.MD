@@ -4,7 +4,7 @@ ASP.NET core web api application can be published as on AWS Lambda as Serverless
 
 Here you can publish Shopping and Users web api projects (available in this folder and each project represent seperate microservice) as AWS lambda function and configure behing AWS lambda API gateway.  
 
-In both project you will see app.UsePathBase path , and on the basis of this base path i am configuring the api Gatway. 
+In both project you will see app.UsePathBase in startup.cs , and on the basis of this base path i am configuring the api Gatway. 
 e.g. for shopping microservices project my base path is app.UsePathBase(new PathString("/shopping")) . Amazon api gateway URL wil be
 http://apigatewayurl/shopping/{anything} , where {anything} is passed along the request as it is and .Net core routing system will resolve it. This way you can call multiple controllers can be resolved behind api gateway. 
 
