@@ -8,7 +8,7 @@ In both project you will see app.UsePathBase in startup.cs , and on the basis of
 e.g. for shopping microservices project my base path is app.UsePathBase(new PathString("/shopping")) . Amazon api gateway URL wil be
 http://apigatewayurl/shopping/{anything} , where {anything} is passed along the request as it is and .Net core routing system will resolve it. This way you can call multiple controllers can be resolved behind api gateway. 
 
-### Pre requsite
+### Prerequisite
 To run the project and publish it to AWS lambda you may need following tools.
 
 - Visual studio 2017
