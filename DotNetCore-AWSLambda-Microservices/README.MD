@@ -26,13 +26,13 @@ When you publish the projects you will have AWS lambda Functions Available to yo
 ### API Gateway 
 
 Your API gateway will sit behind individual microserivces . Here Shopping and Users API resources are pointing to AWS lambda functions
-that you have published in earlier step. /{proxy+} mean that you can pass any uri along the request. e.g. in your shopping api resource if you have multiple controllers in your projects http://url/shopping/api/controller1,  http://url/shopping/api/controller2 {proxy+} will make sure that any request after "shopping" is passed to asp.net core api routing system that will resolve the request to right controller. 
+that you have published in earlier step. /{proxy+} mean that you can pass any uri along the request. e.g. in your shopping api resource if you have multiple controllers in your projects http://url/shopping/api/controller1,  http://url/shopping/api/controller2 , {proxy+} will make sure that any request after "shopping" is passed to asp.net core api routing system that will resolve the request to right controller. 
 
 ![Api Gateway](https://github.com/ImranMA/CodeSamples/blob/master/DotNetCore-AWSLambda-Microservices/APIGatewayImage.JPG)
 
 ### Access API
 
-Once you configure your API gateway and deploy it , you would have api gatewa URL available. You will be calling AWS lambda behind
+Once you configure your API gateway and deploy it , you would have api gateway URL available. You will be calling AWS lambda behind
 the scene which is running your .net core web api.
 
 you can access api e.g.
