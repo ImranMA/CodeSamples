@@ -1,6 +1,6 @@
  ## .NET Core AWS Lambda Microservices
 
-ASP.NET core web api application can be published as on AWS Lambda as Serverless function. You get everything that regular .NET core application provides like controllers , models etc. Amazon API gateway proxy is integrated directly into .NET Core api routing system. So your AWS lambda function will be serving your .Net core web api.
+ASP.NET core web api application can be published as it is on AWS Lambda as Serverless function. You get everything that regular .NET core application provides like controllers , models etc. Amazon API gateway proxy is integrated directly into .NET Core api routing system. So your AWS lambda function will be serving your .Net core web api.
 
 Here you can publish Shopping and Users web api projects (available in this folder and each project represent seperate microservice) as AWS lambda function and configure behing AWS lambda API gateway.  
 
