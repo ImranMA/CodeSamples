@@ -1,6 +1,6 @@
 # escape=`
 
-FROM microsoft/iis
+FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
 SHELL ["powershell", "-command"]
 
 RUN Install-WindowsFeature Web-ASP; `
@@ -51,7 +51,3 @@ RUN Add-OdbcDsn -Name "GISSQL_DB" `
 
 
 ADD . c:\mywebsite
-
-
-
-
